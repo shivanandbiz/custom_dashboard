@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2025-10-09 13:26:58.050475",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-10-09 13:26:58.050475",
+ "modified_by": "Administrator",
+ "module": "Custom Dashboard",
+ "name": "employee-dashboard",
+ "owner": "Administrator",
+ "page_name": "employee-dashboard",
+ "roles": [
+  {
+   "role": "Employee"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1,
+ "title": "Employee Dashboard"
+}

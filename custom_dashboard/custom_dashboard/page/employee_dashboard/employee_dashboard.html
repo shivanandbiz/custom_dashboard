@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<div class="employee-dashboard-container">
+    <!-- Header Card -->
+    <div class="dashboard-card header-card">
+        <div class="header-content">
+            <div class="date-time-section">
+                <h2 class="current-date" id="currentDate"></h2>
+                <p class="day-time" id="dayTime"></p>
+            </div>
+            <div class="status-indicator" id="statusIndicator">
+                <span class="status-dot"></span>
+            </div>
+        </div>
+        
+        <!-- Digital Clock -->
+        <div class="digital-clock" id="digitalClock">12 : 01 : 13</div>
+        
+        <!-- Quick Stats -->
+        <div class="quick-stats">
+            <div class="stat-item">
+                <span class="stat-label">Hours Today</span>
+                <span class="stat-value" id="hoursToday">0.0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Check-ins</span>
+                <span class="stat-value" id="checkinCount">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <button class="btn-action btn-signin" id="btnSignIn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13.8 12H3"/>
+            </svg>
+            Sign In
+        </button>
+        
+        <button class="btn-action btn-signout" id="btnSignOut" style="display: none;">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>
+            </svg>
+            Sign Out
+        </button>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="dashboard-card activity-card">
+        <h3 class="card-title">Recent Activity</h3>
+        <div class="activity-list" id="activityList">
+            <div class="activity-empty">
+                <p>No activity today</p>
+            </div>
+        </div>
+        <button class="btn-link" id="btnViewSwipes">View All Swipes</button>
+    </div>
+
+    <!-- Employee Info -->
+    <div class="dashboard-card info-card" id="employeeInfo">
+        <div class="info-row">
+            <span class="info-label">Employee:</span>
+            <span class="info-value" id="employeeName">Loading...</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Department:</span>
+            <span class="info-value" id="employeeDept">-</span>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="spinner"></div>
+    </div>
+</div>
